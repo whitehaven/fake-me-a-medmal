@@ -11,6 +11,7 @@ python = ">=3.14.10,<3.15"
 marimo = ">=0.25.1,<0.26"
 ruff = ">=0.17.3,<0.18"
 opencv = ">=5.0.0,<6"
+pillow = ">=13.0.0,<14"
 
 [pypi-dependencies]
 augraphy = ">=8.2.6, <9"
