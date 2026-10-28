@@ -1,0 +1,16 @@
+[workspace]
+channels = ["conda-forge"]
+name = "fake-me-a-medmal"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = ">=3.14.10,<3.15"
+marimo = ">=0.25.1,<0.26"
+ruff = ">=0.17.3,<0.18"
+opencv = ">=5.0.0,<6"
+
+[pypi-dependencies]
+augraphy = ">=8.2.6, <9"
