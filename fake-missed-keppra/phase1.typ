@@ -168,3 +168,104 @@
   *Discharge Instructions (Verbal):*
   "You are being admitted to monitor your withdrawal. We will start you on the standard detox program."
 ]
+
+#set text(size: 10pt)
+#set heading(numbering: none)
+#set block(
+  inset: 10pt,
+  fill: white,
+  stroke: black,
+)
+#set table(
+  columns: (auto, auto, auto, auto, auto, auto),
+)
+
+#align(center)[
+  #text(size: 14pt, weight: "bold")[VITALS & LABS: EMERGENCY DEPARTMENT (OCT 1)]
+  #text(size: 9pt, fill: gray)[Patient: Douglas, Arthur | MRN: 2025-998877]
+]
+
+#v(1em)
+
+#block[
+  #text(weight: "bold")[Vital Signs Timeline]
+  #table(
+    columns: (1.2fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+    align: center,
+    inset: 4pt,
+    [Time], [Sys (mmHg)], [Dia (mmHg)], [HR (bpm)], [RR (breaths/min)], [SpO2 (%)],
+    [18:45], [110], [70], [82], [8], [92],
+    [19:30], [132], [84], [92], [16], [98],
+    [21:30], [128], [80], [98], [18], [98],
+    [22:15], [125], [78], [104], [20], [97],
+    [23:45], [122], [76], [108], [22], [96],
+  )
+  #v(0.5em)
+  #text(size: 9pt, fill: gray)[
+    *Note: Initial hypotension and bradypnea consistent with opioid overdose.
+    Tachycardia and tachypnea from 21:30 onward reflect onset of withdrawal/agitation.*
+  ]
+]
+
+#v(1em)
+
+#block[
+  #text(weight: "bold")[Laboratory Results (Emergency Department)]
+  #table(
+    columns: (1.5fr, 1fr, 1.2fr, 1.5fr),
+    align: (left, right, right, left),
+    inset: 4pt,
+    [Test Name], [18:50 (ED Triage)], [19:30 (ED Bay)], [Reference Range],
+    [Hemoglobin (g/dL)], [13.2], [12.9], [13.5 - 17.5],
+    [Hematocrit (%)], [39.5], [38.8], [38 - 47],
+    [Platelets (K/µL)], [210], [205], [150 - 400],
+    [WBC (K/µL)], [9.8], [10.2], [4.0 - 11.0],
+    [Sodium (mEq/L)], [138], [138], [135 - 145],
+    [Potassium (mEq/L)], [4.2], [4.1], [3.5 - 5.0],
+    [Chloride (mEq/L)], [102], [101], [98 - 106],
+    [CO2 (mEq/L)], [24], [24], [22 - 29],
+    [BUN (mg/dL)], [18], [19], [7 - 20],
+    [Creatinine (mg/dL)], [1.1], [1.1], [0.7 - 1.3],
+    [Glucose (mg/dL)], [68], [90], [70 - 110],
+    [Calcium (mg/dL)], [9.1], [9.0], [8.5 - 10.5],
+    [Magnesium (mg/dL)], [1.8], [1.8], [1.7 - 2.2],
+    [Phosphorus (mg/dL)], [3.8], [3.7], [2.5 - 4.5],
+    [AST (U/L)], [32], [30], [10 - 40],
+    [ALT (U/L)], [28], [26], [7 - 56],
+    [Total Bilirubin (mg/dL)], [0.9], [0.9], [0.1 - 1.2],
+    [Urine Opiates], [Positive], [Positive], [Negative],
+    [Urine Amphetamines], [Negative], [Negative], [Negative],
+    [Urine Cocaine], [Negative], [Negative], [Negative],
+    [Urine Benzodiazepines], [Negative], [Negative], [Negative],
+    [Prothrombin Time (sec)], [13.2], [13.0], [11.0 - 13.5],
+    [INR], [1.1], [1.1], [0.8 - 1.2],
+  )
+  #v(0.5em)
+  #text(size: 9pt, fill: gray)[
+    *Note: Glucose dropped to 68 mg/dL at 21:00, treated with D50W, returned to normal.
+    Coagulation profile normal at time of ED visit.*
+  ]
+]
+
+#v(1em)
+
+#block[
+  #text(weight: "bold")[Critical Lab Alerts (System Generated)]
+  #table(
+    columns: (1fr, 1.5fr, 1.5fr),
+    align: (left, left, left),
+    inset: 4pt,
+    [Time], [Alert Type], [Comment],
+    [19:35],
+    [Low Glucose],
+    [Glucose 68 mg/dL < 70. Order placed for D50W 25mL IV. Pt received, glucose rechecked 90 mg/dL at 19:50.],
+
+    [21:42],
+    [High COWS],
+    [COWS Score 32 > 10. Clinical threshold for intervention met. Medication administration order checked.],
+
+    [22:05],
+    [Elevated HR],
+    [Heart Rate 104 bpm > 100. Associated with withdrawal/agitation. Pt comfortable on room air.],
+  )
+]
